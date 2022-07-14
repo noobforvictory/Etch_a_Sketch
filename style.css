@@ -1,15 +1,18 @@
 .container{
     display: flex;
-    width: 480px;
-    
-    border: 5px solid red;
+    width: 500px;
+    height: 500px;
+    border: 2px outset black;
     
     flex-wrap: wrap;
 }
 .grid{
-   
-width: 30px;
-height: 30px;
-background-color: black;
-
+    display: flex;
+    flex: 1 1 auto;
+   aspect-ratio: auto;
+    
+    border: 1px outset black;
+}
+.grid.draw{
+    background-color: black;
 }

@@ -10,3 +10,17 @@ for(let i=0; i<num*num; i++){
     container.appendChild(i);
   }
 }
+const click = document.querySelectorAll('.grid');
+click.forEach(click=>click.addEventListener('click',mouseover ));
+
+function sketch(){
+  this.classList.toggle('draw');
+}
+function mouseover(){
+  click.forEach(click=>click.addEventListener('mouseover',sketch));
+  
+  
+}
+function stopSketch(){
+this.classList.remove('draw');
+}
