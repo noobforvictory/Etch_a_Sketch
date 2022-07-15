@@ -20,7 +20,7 @@ function makeGrid(){
   var num = Number(prompt("For N X N grid, enter N from 2 to 100"));
   if(num<2 || num>100){
     alert('OUT OF BOUNDS, TRY AGAIN');
-    makeGrid();
+   
     return;
    }else{
 for(let i=0; i<num*num; i++){
@@ -36,16 +36,10 @@ for(let i=0; i<num*num; i++){
 
 function draw(){
    const click = document.querySelectorAll('.grid');
-   click.forEach(click=>click.addEventListener('click',mouseOver ));
+   click.forEach(click=>click.addEventListener('mouseover',sketch));
 }
 function sketch(){
   this.classList.add('draw');
 }
 
-
-function mouseOver(){
-  const click = document.querySelectorAll('.grid');
-  click.forEach(click=>click.addEventListener('mouseover',sketch));
-  
-}
 

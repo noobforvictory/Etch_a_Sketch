@@ -32,8 +32,23 @@
     justify-content: space-between;
 
 }
+.btn:hover{
+    border-radius: 25px;
+    background-color: blanchedalmond;
+    color: black;
+}
+.btn:active{
+    border-radius: 25px;
+    background-color: darkred;
+    color: white;
+    border-bottom: 4px outset rgb(10, 2, 2);
+    border-right: 4px outset rgb(5, 1, 1);
+}
 .btn{
-    border: 10px outset rgb(230, 23, 23);
+    border-radius: 25px;
+    border-bottom: 8px outset rgb(41, 41, 41);
+    border-right: 8px outset rgb(41, 41, 41);
+    
     width: 150px;
     height: 50px;
    font-size: large;
