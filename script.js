@@ -39,7 +39,7 @@ function draw(){
    click.forEach(click=>click.addEventListener('click',mouseOver ));
 }
 function sketch(){
-  this.classList.toggle('draw');
+  this.classList.add('draw');
 }
 
 
