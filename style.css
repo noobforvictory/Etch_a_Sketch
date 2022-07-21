@@ -14,7 +14,7 @@
     width: 500px;
     height: 500px;
     border: 10px outset rgb(230, 23, 23);
-   
+    box-shadow: 20px 20px 20px black;
     background-color: white;
     
    
