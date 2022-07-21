@@ -3,7 +3,7 @@ const buttons =document.createElement('div')
 buttons.classList.add('buttons');
 const button = document.createElement('button');
 button.classList.add('btn');
-button.textContent="Make Grid";
+button.textContent="Erase";
 buttons.appendChild(button);
 const button1 = document.createElement('button');
 button1.classList.add('btn');
@@ -13,16 +13,11 @@ body.appendChild(buttons);
 const container = document.createElement('div');
 container.classList.add('container');
 body.appendChild(container);
-button.addEventListener('click',makeGrid);
+button.addEventListener('click',erase);
 button1.addEventListener('click',draw);
-
-function makeGrid(){
-  var num = Number(prompt("For N X N grid, enter N from 2 to 100"));
-  if(num<2 || num>100){
-    alert('OUT OF BOUNDS, TRY AGAIN');
-   
-    return;
-   }else{
+makeGrid(100);
+function makeGrid(num){
+  
 for(let i=0; i<num*num; i++){
     const i= document.createElement('div');
     i.classList.add('grid');
@@ -31,7 +26,7 @@ for(let i=0; i<num*num; i++){
     container.appendChild(i);
     }
    
-  }
+  
 }
 
 function draw(){
@@ -42,4 +37,7 @@ function sketch(){
   this.classList.add('draw');
 }
 
-
+function erase(){
+  const click = document.querySelectorAll('.grid');
+  click.forEach(each=>each.classList.remove('draw'));
+}

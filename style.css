@@ -19,9 +19,7 @@
     
    
 }
-.grid{
-    border: 1px outset black;
-}
+
 .grid.draw{
     background-color: black;
 }
